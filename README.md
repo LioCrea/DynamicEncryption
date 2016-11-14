@@ -1,5 +1,8 @@
 # DynamicEncryption
-Vigenere encryption: static and dynamic. Endless key length.
+Vigenere encryption: static and dynamic. 
+
+Endless key length.
+
 Encrypt any sort of message.
 
 Built for MatterPHP framework.
