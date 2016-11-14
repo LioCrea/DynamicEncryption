@@ -35,10 +35,10 @@ class MasterMdl {
         }
 
         // 1. Convert each char to ascii level
-//        $encodedChar = [];
-//        foreach ($splitAndReversedText as $initChar) {
-//            array_push($encodedChar, $this->asciiBasicTransform($initChar));
-//        }
+        $encodedChar = [];
+        foreach ($splitAndReversedText as $initChar) {
+            array_push($encodedChar, $this->asciiBasicTransform($initChar));
+        }
 
         $nbBlocks = sizeof($splitAndReversedText)/$blockSize;
 
@@ -61,23 +61,21 @@ class MasterMdl {
             $i++;
         }
 
-        return 0;
-
         $firstLevelAssociation = [];
         $i = 0;
 
         // create a random association between text and key
-//        foreach($firstKeyConstraint as $switch) {
-//            array_push($firstLevelAssociation, [$splitAndReversedText[$i], $switch]);
-//            $i++;
-//        }
+        foreach($firstKeyConstraint as $switch) {
+            array_push($firstLevelAssociation, [$splitAndReversedText[$i], $switch]);
+            $i++;
+        }
 
         // convert char to int using ascii
-//        $convertStringArr = [];
-//
-//        for($i = 0; $i < sizeof($firstLevelAssociation); $i++) {
-//            array_push($convertStringArr, $this->asciiBasicTransform($firstLevelAssociation[$i][0]));
-//        }
+        $convertStringArr = [];
+
+        for($i = 0; $i < sizeof($firstLevelAssociation); $i++) {
+            array_push($convertStringArr, $this->asciiBasicTransform($firstLevelAssociation[$i][0]));
+        }
 
         // apply first key constraint
         $firstBijectionArray = $this->vigenereFirstKeyConstraint($encodedChar, $firstKeyConstraint);
