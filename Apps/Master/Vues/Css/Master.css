@@ -1,0 +1,77 @@
+
+body {
+    background-color: rgb(240,240,240) !important;
+}
+
+.enter-msg-to-encrypt {
+    margin: 50px auto;
+    text-align: center;
+}
+
+label {
+    margin-right: 40px;
+    font-family: "Lato Light";
+    font-size: 24px;
+}
+
+.message {
+    width: 400px;
+    height: 60px;
+    padding-left: 10px;
+    font-family: "Lato Light";
+    font-size: 30px;
+}
+
+.enter-msg-to-encrypt > button {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: "Lato Light";
+    font-size: 20px;
+    border: 1px solid #0E7693;
+    color: #0E7693;
+    background: none;
+    cursor: pointer;
+}
+
+.enter-msg-to-encrypt > button:hover {
+    background: #0E7693;
+    color: #ffffff;
+}
+
+.enter-msg-to-encrypt > button:focus {
+    outline: none;
+}
+
+.options {
+    margin-top: 50px;
+    font-family: "Lato Light";
+}
+
+.select {
+    margin-left: 100px;
+    padding-right: 30px;
+}
+
+.select:first-child {
+    margin-left: 0;
+}
+
+.key-size {
+    margin-top: 40px;
+}
+
+.size {
+    width: 200px;
+    padding-left: 10px;
+    font-family: "Lato Light";
+    font-size: 30px;
+}
+
+.encrypted-msg {
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Lato Light";
+    font-size: 24px;
+}
