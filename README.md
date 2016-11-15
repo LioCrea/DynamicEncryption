@@ -8,6 +8,7 @@ Feel free to update it for other frameworks and/or other patterns.
 
 Go to Master app to test it.
 
+
 Vigenere Encryption
 -------------------
 
